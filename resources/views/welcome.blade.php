@@ -9,7 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/fork.min.css">
     <!-- Styles -->
     <style>
         html,
@@ -54,7 +54,7 @@
             color: #fff;
             padding: 10px 25px;
             font-size: 13px;
-            border-radius:5px;
+            border-radius: 5px;
             height: 40px;
             background: #333;
             font-weight: 600;
@@ -65,6 +65,10 @@
 
         .m-b-md {
             margin-bottom: 30px;
+        }
+
+        .fork-me {
+            background-color: #000;
         }
     </style>
 </head>
@@ -85,9 +89,17 @@
         </div>
         @endif
 
+        <div class="fork-me-wrapper">
+            <div class="fork-me">
+                <a class="fork-me-link" href="https://github.com/stephenjude/paystack-lite-demo">
+                    <span class="fork-me-text">Fork Me On GitHub</span>
+                </a>
+            </div>
+        </div>
+
         <div class="content">
             <div class="title m-b-md">
-            Paystack Lite Demo
+                Paystack Lite Demo
             </div>
 
             <div class="links">
@@ -103,19 +115,18 @@
         var email = 'customer@email.com';
         var meta = {
             custom_fields: [{
-                    display_name: "Name",
-                    variable_name: "name",
-                    value: "My Customer"
-                },
-                {
-                    display_name: "Mobile Number",
-                    variable_name: "mobile_number",
-                    value: "+2348012345678"
-                }
-            ]
+                display_name: "Name",
+                variable_name: "name",
+                value: "My Customer"
+            },
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: "+2348012345678"
+            }]
         };
 
-        document.getElementById('paymentBtn').onclick = function() {
+        document.getElementById('paymentBtn').onclick = function () {
             //display checkout form
             payWithPaystack(amount, email, meta, onPaymentCompleted, onPaymentCancelled);
         };

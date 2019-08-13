@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p> -->
 
-# Paystack Lite Demo[https://paystack-lite-demo.herokuapp.com]
+# Paystack Lite [Demo](https://paystack-lite-demo.herokuapp.com)
 
-A demo application to illustrate how paystack-lite[https://github.com/stephenjude/paystack-lite] works. For live demo visit paystack-lite-demo.herokuapp.com[https://paystack-lite-demo.herokuapp.com]
+A demo application to illustrate how [paystack-lite](https://github.com/stephenjude/paystack-lite) works. For live demo visit [paystack-lite-demo.herokuapp.com](https://paystack-lite-demo.herokuapp.com)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/stephenjude/paystack-lite-demo/master/screenshot.PNG">
