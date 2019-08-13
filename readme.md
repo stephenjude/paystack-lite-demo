@@ -11,6 +11,10 @@
 
 A demo application to illustrate how paystack-lite works. 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stephenjude/paystack-lite-demo/master/screenshot.PNG">
+</p>
+
 ## Installation
 
 Clone the repo locally:
@@ -30,6 +34,15 @@ Setup configuration:
 
 ```bash
 cp .env.example .env
+```
+
+Open your .env file and add your test keys, customer default email and paystack url:
+
+```
+PAYSTACK_PUBLIC_KEY=xxxxxxxxxxxxx
+PAYSTACK_SECRET_KEY=xxxxxxxxxxxxx
+PAYSTACK_PAYMENT_URL=https://api.paystack.co
+PAYSTACK_CUSTOMER_DEFAULT_EMAIL=general@email.com
 ```
 
 Generate application key:
